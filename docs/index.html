@@ -210,9 +210,9 @@
 
         <div class="baseline-panel">
           <div class="baseline-copy">
-            <p class="panel-label">REUSED BASELINE ANALYSIS</p>
-            <h3>Daily path, not just the endpoint.</h3>
-            <p>The original deterministic analysis exported standalone SVG figures. This public view keeps those plots intact and pairs them with their scope: one completed, historical, in-sample experiment.</p>
+            <p class="panel-label">BASELINE ANALYSIS</p>
+            <h3>Measurement boundaries stay visible.</h3>
+            <p>This public view keeps the stored summary metrics paired with their scope: one completed, historical, in-sample experiment.</p>
             <div class="baseline-kpis" aria-label="Baseline 001 key metrics">
               <div><span>145</span><small>sessions</small></div>
               <div><span>579</span><small>trades</small></div>
@@ -224,16 +224,6 @@
               <p>Results cover 2025-11-02 through 2026-07-01 on one symbol. Capital is reset per session, results are non-compounding, and the backtest excludes execution costs. Return on capital is a plain ratio—not Sharpe, Calmar, or audited investment performance.</p>
             </details>
           </div>
-          <figure class="figure-viewer">
-            <div class="figure-tabs" role="group" aria-label="Baseline chart">
-              <button type="button" aria-pressed="true" data-figure="equity">Daily equity</button>
-              <button type="button" aria-pressed="false" data-figure="drawdown">Daily drawdown</button>
-            </div>
-            <div class="figure-canvas">
-              <img id="baseline-figure" src="assets/charts/baseline-daily-equity.svg" width="900" height="420" alt="Baseline 001 daily cumulative realized simulated PnL across 145 historical sessions">
-            </div>
-            <figcaption id="baseline-caption">Daily cumulative realized simulated PnL · Baseline_001 · session index</figcaption>
-          </figure>
         </div>
       </div>
     </section>

@@ -652,14 +652,12 @@ code {
   letter-spacing: -0.025em;
 }
 
-.metric-tabs,
-.figure-tabs {
+.metric-tabs {
   display: inline-flex;
   border: 1px solid var(--line);
 }
 
-.metric-tabs button,
-.figure-tabs button {
+.metric-tabs button {
   min-height: 34px;
   padding: 8px 11px;
   border: 0;
@@ -673,18 +671,15 @@ code {
   transition: background 130ms ease, color 130ms ease;
 }
 
-.metric-tabs button:last-child,
-.figure-tabs button:last-child {
+.metric-tabs button:last-child {
   border-right: 0;
 }
 
-.metric-tabs button:hover,
-.figure-tabs button:hover {
+.metric-tabs button:hover {
   color: var(--ink);
 }
 
-.metric-tabs button[aria-pressed="true"],
-.figure-tabs button[aria-pressed="true"] {
+.metric-tabs button[aria-pressed="true"] {
   background: var(--paper);
   color: var(--paper-ink);
 }
@@ -960,18 +955,12 @@ tbody tr.is-selected {
 }
 
 .baseline-panel {
-  display: grid;
-  grid-template-columns: minmax(280px, 0.36fr) minmax(0, 0.64fr);
   border-top: 1px solid var(--line);
 }
 
-.baseline-copy,
-.figure-viewer {
-  padding: 30px;
-}
-
 .baseline-copy {
-  border-right: 1px solid var(--line);
+  max-width: 860px;
+  padding: 30px;
 }
 
 .baseline-copy > p:not(.panel-label) {
@@ -1054,28 +1043,6 @@ details summary::-webkit-details-marker {
   margin-bottom: 14px;
   color: var(--muted);
   font-size: 11px;
-}
-
-.figure-tabs {
-  margin-bottom: 14px;
-}
-
-.figure-canvas {
-  overflow: hidden;
-  border: 1px solid #c8c7bf;
-  background: #fff;
-}
-
-.figure-canvas img {
-  width: 100%;
-  height: auto;
-}
-
-.figure-viewer figcaption {
-  margin-top: 10px;
-  color: var(--faint);
-  font-family: var(--mono);
-  font-size: 9px;
 }
 
 .architecture-section,
@@ -2098,8 +2065,7 @@ details summary::-webkit-details-marker {
   .comparison-panel,
   .run-inspector,
   .table-panel,
-  .baseline-copy,
-  .figure-viewer {
+  .baseline-copy {
     padding: 20px 14px;
   }
 
@@ -2146,14 +2112,6 @@ details summary::-webkit-details-marker {
 
   .baseline-kpis {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .figure-tabs {
-    width: 100%;
-  }
-
-  .figure-tabs button {
-    flex: 1;
   }
 
   .architecture-flow {

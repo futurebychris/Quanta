@@ -208,27 +208,6 @@
     });
   }
 
-  function initFigureViewer() {
-    var image = query("#baseline-figure");
-    var caption = query("#baseline-caption");
-    queryAll("[data-figure]").forEach(function (button) {
-      button.addEventListener("click", function () {
-        queryAll("[data-figure]").forEach(function (candidate) {
-          candidate.setAttribute("aria-pressed", String(candidate === button));
-        });
-        if (button.dataset.figure === "drawdown") {
-          image.src = "assets/charts/baseline-daily-drawdown.svg";
-          image.alt = "Baseline 001 daily simulated drawdown across 145 historical sessions";
-          caption.textContent = "Daily historical simulated drawdown · Baseline_001 · session index";
-        } else {
-          image.src = "assets/charts/baseline-daily-equity.svg";
-          image.alt = "Baseline 001 daily cumulative realized simulated PnL across 145 historical sessions";
-          caption.textContent = "Daily cumulative realized simulated PnL · Baseline_001 · session index";
-        }
-      });
-    });
-  }
-
   function selectedRun() {
     return state.runs.find(function (run) { return run.id === state.selectedRunId; }) || state.runs[0];
   }
@@ -418,7 +397,6 @@
 
   initNavigation();
   initArchitecture();
-  initFigureViewer();
   initMetricControls();
   loadDashboard();
 })();
