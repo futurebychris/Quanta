@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "quanta-public-backtest-snapshot-v1",
+  "source": "Existing Quanta share-mode experiment dashboard",
+  "dataThrough": "2026-07-01",
+  "baselineId": 39,
+  "scope": {
+    "executionMode": "BACKTEST",
+    "resultType": "historical hypothetical simulation",
+    "compounding": false,
+    "capitalResetEachSession": true,
+    "executionCostsModeled": false,
+    "livePerformance": false
+  },
+  "runs": [
+    {
+      "id": 38,
+      "name": "Snapshot_038",
+      "baseline": false,
+      "capital": 1000.0,
+      "period": { "from": "2026-06-25", "to": "2026-07-01" },
+      "metrics": {
+        "totalPnl": 13.867015,
+        "returnOnCapital": 0.013867015,
+        "maxDrawdown": -0.8349999999999795,
+        "maxDrawdownCapital": -0.0008349999999999795,
+        "tradeCount": 9,
+        "winRate": 0.6666666666666666,
+        "profitFactor": 15.910768817205204,
+        "expectancy": 1.540779444444455
+      }
+    },
+    {
+      "id": 39,
+      "name": "Baseline_001",
+      "baseline": true,
+      "capital": 1000.0,
+      "period": { "from": "2025-11-02", "to": "2026-07-01" },
+      "sessions": 145,
+      "metrics": {
+        "totalPnl": 146.56388478,
+        "returnOnCapital": 0.14656388478,
+        "maxDrawdown": -50.67950712118403,
+        "maxDrawdownCapital": -0.050679507121184034,
+        "tradeCount": 579,
+        "winRate": 0.5785837651122625,
+        "profitFactor": 1.2720299277298566,
+        "expectancy": 0.2531327889104887
+      }
+    },
+    {
+      "id": 47,
+      "name": "Snapshot_047",
+      "baseline": false,
+      "capital": 5000.0,
+      "period": { "from": "2025-11-02", "to": "2026-07-01" },
+      "metrics": {
+        "totalPnl": 638.24117207,
+        "returnOnCapital": 0.127648234414,
+        "maxDrawdown": -251.96082830435716,
+        "maxDrawdownCapital": -0.05039216566087143,
+        "tradeCount": 703,
+        "winRate": 0.5689900426742532,
+        "profitFactor": 1.2465237405001661,
+        "expectancy": 0.9078821793274853
+      }
+    },
+    {
+      "id": 48,
+      "name": "Snapshot_048",
+      "baseline": false,
+      "capital": 5000.0,
+      "period": { "from": "2025-11-02", "to": "2026-07-01" },
+      "metrics": {
+        "totalPnl": 490.77340141,
+        "returnOnCapital": 0.098154680282,
+        "maxDrawdown": -303.9476260383781,
+        "maxDrawdownCapital": -0.06078952520767562,
+        "tradeCount": 925,
+        "winRate": 0.5794594594594594,
+        "profitFactor": 1.1306418150628266,
+        "expectancy": 0.5305658393614745
+      }
+    },
+    {
+      "id": 65,
+      "name": "Snapshot_065",
+      "baseline": false,
+      "capital": 5000.0,
+      "period": { "from": "2025-11-02", "to": "2026-07-01" },
+      "metrics": {
+        "totalPnl": 684.93099589,
+        "returnOnCapital": 0.13698619917799998,
+        "maxDrawdown": -222.0712284847359,
+        "maxDrawdownCapital": -0.044414245696947185,
+        "tradeCount": 718,
+        "winRate": 0.5445682451253482,
+        "profitFactor": 1.2678156442863056,
+        "expectancy": 0.9539428912070426
+      }
+    }
+  ]
+}

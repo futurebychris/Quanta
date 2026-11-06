@@ -1,0 +1,511 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Quanta is an independently developed quantitative trading and research platform built around deterministic execution, historical simulation, and leakage-resistant machine-learning research.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#101310">
+  <title>QUANTA — Quantitative Trading &amp; Research Platform</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="scripts/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <header class="site-header" data-site-header>
+    <a class="brand" href="#overview" aria-label="Quanta home">
+      <span class="brand-mark" aria-hidden="true">Q<span>/</span></span>
+      <span class="brand-name">QUANTA</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span>Menu</span>
+      <span class="nav-toggle-lines" aria-hidden="true"></span>
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Primary" data-site-nav>
+      <a href="#overview">Overview</a>
+      <a href="#dashboard">Dashboard</a>
+      <a href="#architecture">Architecture</a>
+      <a href="#research">Research</a>
+      <a href="#development">Development</a>
+    </nav>
+    <div class="header-status" aria-label="Project status">
+      <span class="status-light" aria-hidden="true"></span>
+      Public research build
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero section-shell" id="overview" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker"><span>Independent system</span><span>Research build</span></p>
+        <h1 id="hero-title">QUANTA</h1>
+        <p class="hero-subtitle">Quantitative Trading &amp; Research Platform</p>
+        <p class="hero-lede">A systematic trading platform built from the ground up—from historical market-data processing and deterministic strategy execution to candidate-level, leakage-resistant machine-learning research.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#dashboard">Explore dashboard <span aria-hidden="true">↓</span></a>
+          <a class="button button-secondary" href="#architecture">View architecture <span aria-hidden="true">→</span></a>
+        </div>
+        <p class="hero-note">Historical simulation only. No live trading, brokerage connection, or trained production model.</p>
+      </div>
+
+      <aside class="system-ledger" aria-label="Verified system status">
+        <div class="ledger-head">
+          <span>System ledger</span>
+          <span class="mono">VERIFIED ARTIFACTS</span>
+        </div>
+        <ol class="ledger-list">
+          <li>
+            <span class="ledger-index">01</span>
+            <span><strong>Strategy 8887</strong><small>Deterministic decision path</small></span>
+            <span class="status status-implemented">Implemented</span>
+          </li>
+          <li>
+            <span class="ledger-index">02</span>
+            <span><strong>Historical replay</strong><small>Read-only simulation harness</small></span>
+            <span class="status status-implemented">Implemented</span>
+          </li>
+          <li>
+            <span class="ledger-index">03</span>
+            <span><strong>Candidate research</strong><small>Events, outcomes, dataset</small></span>
+            <span class="status status-implemented">Implemented</span>
+          </li>
+          <li>
+            <span class="ledger-index">04</span>
+            <span><strong>TAKE / SKIP model</strong><small>Contracts ready; no fitted artifact</small></span>
+            <span class="status status-research">Research</span>
+          </li>
+          <li>
+            <span class="ledger-index">05</span>
+            <span><strong>Broker integration</strong><small>Outside this public system</small></span>
+            <span class="status status-locked">Locked</span>
+          </li>
+        </ol>
+        <div class="ledger-foot mono">
+          <span>STATIC / READ-ONLY</span>
+          <span>NO RUNTIME ENGINE</span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="evidence-strip" aria-labelledby="evidence-strip-title">
+      <h2 class="visually-hidden" id="evidence-strip-title">Verified engineering evidence</h2>
+      <div class="evidence-item">
+        <span class="evidence-value">11</span>
+        <span class="evidence-label">causal model inputs<br><small>frozen V1 order</small></span>
+      </div>
+      <div class="evidence-item">
+        <span class="evidence-value">145</span>
+        <span class="evidence-label">historical sessions<br><small>Baseline_001 report</small></span>
+      </div>
+      <div class="evidence-item">
+        <span class="evidence-value">579</span>
+        <span class="evidence-label">simulated trades<br><small>Baseline_001 only</small></span>
+      </div>
+      <div class="evidence-item">
+        <span class="evidence-value">40<span class="unit">m</span></span>
+        <span class="evidence-label">validation embargo<br><small>frozen protocol</small></span>
+      </div>
+      <div class="evidence-item">
+        <span class="evidence-value">5</span>
+        <span class="evidence-label">sanitized backtests<br><small>share dashboard snapshot</small></span>
+      </div>
+    </section>
+
+    <section class="section-shell section-block dashboard-section" id="dashboard" aria-labelledby="dashboard-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">01 / DASHBOARD</p>
+          <h2 id="dashboard-title">Evidence before narrative.</h2>
+        </div>
+        <p>The existing Quanta experiment dashboard is reused as a focused public view. All figures below are stored or deterministically derived from sanitized historical artifacts—not generated for this website.</p>
+      </div>
+
+      <div class="dashboard-frame" data-dashboard>
+        <div class="dashboard-topbar">
+          <div>
+            <span class="dashboard-title">Historical experiment comparison</span>
+            <span class="dashboard-subtitle">Strategy 8887 · historical backtests · through 2026-07-01</span>
+          </div>
+          <div class="dashboard-flags">
+            <span>STATIC SNAPSHOT</span>
+            <span>IN-SAMPLE</span>
+            <span>FRICTIONLESS</span>
+          </div>
+        </div>
+
+        <div class="dashboard-warning">
+          <span class="warning-mark" aria-hidden="true">!</span>
+          <p><strong>Simulated results—not live performance.</strong> Capital resets each session. Commissions, spread, slippage, market impact, latency, rejects, partial fills, and taxes are not modeled.</p>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="comparison-panel">
+            <div class="panel-head">
+              <div>
+                <p class="panel-label">COMPARE RUNS</p>
+                <h3 id="comparison-title">Return on capital</h3>
+              </div>
+              <div class="metric-tabs" role="group" aria-label="Comparison metric">
+                <button type="button" aria-pressed="true" data-metric="returnOnCapital">Return</button>
+                <button type="button" aria-pressed="false" data-metric="maxDrawdown">Drawdown</button>
+                <button type="button" aria-pressed="false" data-metric="tradeCount">Trades</button>
+                <button type="button" aria-pressed="false" data-metric="winRate">Win rate</button>
+                <button type="button" aria-pressed="false" data-metric="profitFactor">Profit factor</button>
+              </div>
+            </div>
+            <p class="chart-summary" id="chart-summary">Normalized simulated PnL divided by session capital. This is not a risk-adjusted measure.</p>
+            <div class="bar-chart" id="comparison-chart" role="img" aria-labelledby="comparison-title chart-summary" aria-live="polite">
+              <div class="chart-loading">Loading sanitized dashboard data…</div>
+            </div>
+            <div class="chart-axis" aria-hidden="true"><span>0</span><span id="chart-axis-max">—</span></div>
+            <div class="chart-tooltip" id="chart-tooltip" role="tooltip" hidden></div>
+          </div>
+
+          <aside class="run-inspector" aria-labelledby="inspector-title">
+            <div class="panel-label">SELECTED EXPERIMENT</div>
+            <h3 id="inspector-title" data-inspector-name>Baseline_001</h3>
+            <p class="run-id mono" data-inspector-id>RUN 39 · BASELINE ANCHOR</p>
+            <dl class="inspector-metrics">
+              <div><dt>Period</dt><dd data-inspector-period>2025-11-02 — 2026-07-01</dd></div>
+              <div><dt>Session capital</dt><dd data-inspector-capital>$1,000.00</dd></div>
+              <div><dt>Simulated PnL</dt><dd data-inspector-pnl>+$146.56</dd></div>
+              <div><dt>Trade count</dt><dd data-inspector-trades>579</dd></div>
+              <div><dt>Max drawdown</dt><dd data-inspector-drawdown>-$50.68</dd></div>
+              <div><dt>Profit factor</dt><dd data-inspector-pf>1.27</dd></div>
+            </dl>
+            <p class="inspector-note">Select a chart bar or table run to inspect the exact stored snapshot. Selection does not imply ranking.</p>
+          </aside>
+        </div>
+
+        <div class="table-panel">
+          <div class="table-head">
+            <div>
+              <p class="panel-label">EXPERIMENT REGISTER</p>
+              <h3>Five sanitized success snapshots</h3>
+            </div>
+            <p>Sort any column. The original dashboard intentionally does not designate a “best” run.</p>
+          </div>
+          <div class="table-scroll" tabindex="0" aria-label="Scrollable experiment table">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col"><button type="button" data-sort="id">Run <span aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button type="button" data-sort="name">Experiment <span aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button type="button" data-sort="capital">Capital <span aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button type="button" data-sort="returnOnCapital">Return <span aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button type="button" data-sort="maxDrawdown">Drawdown <span aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button type="button" data-sort="tradeCount">Trades <span aria-hidden="true">↕</span></button></th>
+                  <th scope="col"><button type="button" data-sort="winRate">Win rate <span aria-hidden="true">↕</span></button></th>
+                </tr>
+              </thead>
+              <tbody id="experiment-table-body">
+                <tr><td colspan="7">Loading…</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="baseline-panel">
+          <div class="baseline-copy">
+            <p class="panel-label">REUSED BASELINE ANALYSIS</p>
+            <h3>Daily path, not just the endpoint.</h3>
+            <p>The original deterministic analysis exported standalone SVG figures. This public view keeps those plots intact and pairs them with their scope: one completed, historical, in-sample experiment.</p>
+            <div class="baseline-kpis" aria-label="Baseline 001 key metrics">
+              <div><span>145</span><small>sessions</small></div>
+              <div><span>579</span><small>trades</small></div>
+              <div><span>+14.66%</span><small>return on capital</small></div>
+              <div><span>-5.07%</span><small>max drawdown / capital</small></div>
+            </div>
+            <details>
+              <summary>Read the measurement boundaries</summary>
+              <p>Results cover 2025-11-02 through 2026-07-01 on one symbol. Capital is reset per session, results are non-compounding, and the backtest excludes execution costs. Return on capital is a plain ratio—not Sharpe, Calmar, or audited investment performance.</p>
+            </details>
+          </div>
+          <figure class="figure-viewer">
+            <div class="figure-tabs" role="group" aria-label="Baseline chart">
+              <button type="button" aria-pressed="true" data-figure="equity">Daily equity</button>
+              <button type="button" aria-pressed="false" data-figure="drawdown">Daily drawdown</button>
+            </div>
+            <div class="figure-canvas">
+              <img id="baseline-figure" src="assets/charts/baseline-daily-equity.svg" width="900" height="420" alt="Baseline 001 daily cumulative realized simulated PnL across 145 historical sessions">
+            </div>
+            <figcaption id="baseline-caption">Daily cumulative realized simulated PnL · Baseline_001 · session index</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block architecture-section" id="architecture" aria-labelledby="architecture-title">
+      <div class="section-shell">
+        <div class="section-heading">
+          <div>
+            <p class="section-number">02 / ARCHITECTURE</p>
+            <h2 id="architecture-title">Research can advise. Deterministic controls decide.</h2>
+          </div>
+          <p>The system separates opportunity generation, research labels, model filtering, and execution authority. A future model may filter a Strategy 8887 candidate; it cannot create direction, bypass risk controls, or submit an order.</p>
+        </div>
+
+        <div class="architecture-map" aria-label="Quanta system architecture">
+          <div class="architecture-flow">
+            <button class="architecture-node is-active" type="button" data-architecture="market" aria-pressed="true">
+              <span class="node-sequence">01</span>
+              <span class="node-title">Market data</span>
+              <span class="node-copy">Canonical 1-minute bars</span>
+              <span class="status status-implemented">Implemented</span>
+            </button>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <button class="architecture-node" type="button" data-architecture="strategy" aria-pressed="false">
+              <span class="node-sequence">02</span>
+              <span class="node-title">Strategy 8887</span>
+              <span class="node-copy">Rules-based proposals</span>
+              <span class="status status-implemented">Implemented</span>
+            </button>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <button class="architecture-node" type="button" data-architecture="candidate" aria-pressed="false">
+              <span class="node-sequence">03</span>
+              <span class="node-title">Candidates</span>
+              <span class="node-copy">Events + isolated outcomes</span>
+              <span class="status status-implemented">Implemented</span>
+            </button>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <button class="architecture-node" type="button" data-architecture="model" aria-pressed="false">
+              <span class="node-sequence">04</span>
+              <span class="node-title">TAKE / SKIP</span>
+              <span class="node-copy">Meta-label research role</span>
+              <span class="status status-research">Research</span>
+            </button>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <button class="architecture-node" type="button" data-architecture="risk" aria-pressed="false">
+              <span class="node-sequence">05</span>
+              <span class="node-title">Risk controls</span>
+              <span class="node-copy">Deterministic authority</span>
+              <span class="status status-implemented">Implemented</span>
+            </button>
+            <span class="flow-arrow" aria-hidden="true">→</span>
+            <button class="architecture-node" type="button" data-architecture="broker" aria-pressed="false">
+              <span class="node-sequence">06</span>
+              <span class="node-title">Broker adapter</span>
+              <span class="node-copy">No public connection</span>
+              <span class="status status-locked">Locked</span>
+            </button>
+          </div>
+
+          <div class="architecture-detail" aria-live="polite">
+            <div>
+              <p class="panel-label" id="architecture-detail-label">IMPLEMENTED · DATA FOUNDATION</p>
+              <h3 id="architecture-detail-title">Canonical historical inputs</h3>
+            </div>
+            <p id="architecture-detail-copy">Quanta constrains research to regular-session, minute-level bars and routes replay through the same indicator and decision path used by the strategy engine.</p>
+            <p class="mono architecture-contract" id="architecture-detail-contract">CONTRACT / CAUSAL INPUTS ONLY</p>
+          </div>
+        </div>
+
+        <div class="authority-boundary">
+          <div class="boundary-icon" aria-hidden="true">⊢</div>
+          <div>
+            <p class="panel-label">AUTHORITY BOUNDARY</p>
+            <h3>The model is a filter, not an execution engine.</h3>
+          </div>
+          <p>Strategy 8887 proposes the opportunity. The research model may return TAKE or SKIP. Deterministic risk controls retain the final authority. Brokerage integration remains locked and is absent from this website.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-shell section-block research-section" id="research" aria-labelledby="research-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">03 / RESEARCH</p>
+          <h2 id="research-title">A dataset designed around what could have happened.</h2>
+        </div>
+        <p>The interesting work is not the model name. It is preserving the correct research population, enforcing decision-time causality, and preventing overlapping future information from leaking across evaluation boundaries.</p>
+      </div>
+
+      <div class="research-layout">
+        <div class="research-accordions">
+          <details open>
+            <summary><span>01</span><strong>Preserve rejected opportunities</strong><small>Population integrity</small></summary>
+            <p>CandidateEvent records every raw Strategy 8887 opportunity, including candidates blocked by cash, session, timing, or concurrency gates. Training only on executed trades would silently remove parts of the opportunity population.</p>
+          </details>
+          <details>
+            <summary><span>02</span><strong>Isolate candidate outcomes</strong><small>Counterfactual labels</small></summary>
+            <p>CandidateOutcome evaluates each opportunity independently on later bars. It is explicitly not a portfolio result and excludes portfolio-level effects. That keeps hypothetical opportunity returns separate from actual simulated execution.</p>
+          </details>
+          <details>
+            <summary><span>03</span><strong>Freeze causal features</strong><small>Decision-time information</small></summary>
+            <p>The model vector uses values available on the completed candidate bar. Outcome fields, identity metadata, portfolio state, and future-derived information are kept outside the estimator input.</p>
+          </details>
+          <details>
+            <summary><span>04</span><strong>Validate chronologically</strong><small>No random split</small></summary>
+            <p>Financial observations are time-dependent. Quanta assigns fixed calendar windows so training always precedes evaluation; random splitting is structurally unavailable in the validation module.</p>
+          </details>
+          <details>
+            <summary><span>05</span><strong>Purge and embargo overlaps</strong><small>Leakage control</small></summary>
+            <p>Each label consumes an information interval from candidate time through outcome resolution. Overlapping training intervals are purged, then a fixed 40-minute embargo excludes observations immediately after the evaluation boundary.</p>
+          </details>
+          <details>
+            <summary><span>06</span><strong>Define TAKE / SKIP narrowly</strong><small>Meta-labeling</small></summary>
+            <p>The target asks whether an isolated candidate return exceeds a frozen gross-return hurdle. It does not predict direction, size a position, or replace deterministic strategy and risk logic. No fitted production model is claimed.</p>
+          </details>
+        </div>
+
+        <aside class="feature-contract" aria-labelledby="feature-title">
+          <div class="feature-head">
+            <p class="panel-label">FROZEN FEATURE CONTRACT</p>
+            <h3 id="feature-title">11 inputs, fixed order</h3>
+            <p class="mono">quanta-v1-model-features-v1</p>
+          </div>
+          <ol class="feature-list">
+            <li><span>01</span><code>zscore</code></li>
+            <li><span>02</span><code>volume_ratio</code></li>
+            <li><span>03</span><code>adx</code></li>
+            <li><span>04</span><code>open_to_close_return</code></li>
+            <li><span>05</span><code>high_to_close_return</code></li>
+            <li><span>06</span><code>low_to_close_return</code></li>
+            <li><span>07</span><code>bar_vw_to_close_return</code></li>
+            <li><span>08</span><code>vwap_to_close_return</code></li>
+            <li><span>09</span><code>vwap_std_over_close</code></li>
+            <li><span>10</span><code>atr_over_close</code></li>
+            <li><span>11</span><code>session_progress</code></li>
+          </ol>
+          <div class="feature-foot">
+            <span>FLOAT64</span><span>NO IMPUTATION</span><span>HARD-FAIL</span>
+          </div>
+        </aside>
+      </div>
+
+      <div class="validation-diagram" aria-labelledby="validation-title">
+        <div class="validation-intro">
+          <p class="panel-label">FROZEN VALIDATION PROTOCOL</p>
+          <h3 id="validation-title">Chronology first.</h3>
+          <p>Two evaluation stages expand forward through time. Information intervals are checked before any future estimator would receive a row.</p>
+        </div>
+        <div class="validation-track" aria-label="Chronological development, validation, and pre-August test windows">
+          <div class="validation-window window-development">
+            <span>DEVELOPMENT</span>
+            <small>2025-10-02 — 2026-03-31</small>
+          </div>
+          <div class="validation-window window-validation">
+            <span>VALIDATION</span>
+            <small>2026-04-01 — 2026-05-15</small>
+          </div>
+          <div class="validation-window window-test">
+            <span>PRE-AUGUST TEST</span>
+            <small>2026-05-16 — 2026-07-01</small>
+          </div>
+          <div class="embargo-marker"><span>40m embargo</span></div>
+        </div>
+        <p class="validation-note"><strong>Sealed boundary:</strong> August 2026 and later rows are rejected by the candidate-population and validation contracts. This showcase did not inspect that data.</p>
+      </div>
+    </section>
+
+    <section class="section-block achievements-section" aria-labelledby="achievements-title">
+      <div class="section-shell">
+        <div class="section-heading compact-heading">
+          <div>
+            <p class="section-number">04 / ENGINEERING</p>
+            <h2 id="achievements-title">The hard parts are explicit.</h2>
+          </div>
+        </div>
+        <ol class="achievement-list">
+          <li>
+            <span class="achievement-index">01</span>
+            <div><h3>Deterministic strategy engine</h3><p>One per-bar decision path processes market information and produces reproducible Strategy 8887 behavior without a separate replay branch.</p></div>
+            <span class="achievement-tag">DECISION PATH</span>
+          </li>
+          <li>
+            <span class="achievement-index">02</span>
+            <div><h3>Historical replay and experiment tracking</h3><p>Backtests are treated as versioned experiments with stored metrics, configuration fingerprints, and failure-visible lifecycle states.</p></div>
+            <span class="achievement-tag">REPRODUCIBILITY</span>
+          </li>
+          <li>
+            <span class="achievement-index">03</span>
+            <div><h3>Immutable candidate contracts</h3><p>Frozen event and outcome records keep decision-time facts, historical strategy metadata, future labels, and provenance in separate roles.</p></div>
+            <span class="achievement-tag">DATA CONTRACTS</span>
+          </li>
+          <li>
+            <span class="achievement-index">04</span>
+            <div><h3>Counterfactual opportunity research</h3><p>Blocked raw candidates are preserved and evaluated independently, making the research population larger and more honest than executed trades alone.</p></div>
+            <span class="achievement-tag">POPULATION BIAS</span>
+          </li>
+          <li>
+            <span class="achievement-index">05</span>
+            <div><h3>Leakage-resistant evaluation</h3><p>Fixed chronological windows, closed information intervals, purging, and embargo are encoded as hard constraints—not analyst conventions.</p></div>
+            <span class="achievement-tag">VALIDATION</span>
+          </li>
+          <li>
+            <span class="achievement-index">06</span>
+            <div><h3>Public/private dashboard boundary</h3><p>The existing dashboard has an explicit share mode that removes configuration, hashes, notes, and error text while preserving methodology disclosures.</p></div>
+            <span class="achievement-tag">SAFE EXPORT</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section-shell section-block development-section" id="development" aria-labelledby="development-title">
+      <div class="section-heading">
+        <div>
+          <p class="section-number">05 / DEVELOPMENT</p>
+          <h2 id="development-title">Working software, unfinished on purpose.</h2>
+        </div>
+        <p>The roadmap does not collapse research code into production claims. Completed stages are backed by source contracts or static artifacts; everything after model fitting remains plainly marked as planned.</p>
+      </div>
+
+      <div class="roadmap-layout">
+        <div class="roadmap-legend" aria-label="Roadmap status legend">
+          <span><i class="legend-dot dot-implemented"></i> Implemented</span>
+          <span><i class="legend-dot dot-research"></i> Research</span>
+          <span><i class="legend-dot dot-planned"></i> Planned</span>
+          <span><i class="legend-dot dot-locked"></i> Locked</span>
+        </div>
+        <ol class="roadmap-list">
+          <li class="roadmap-complete"><span class="roadmap-marker"></span><div><small>FOUNDATION</small><h3>Historical market-data infrastructure</h3><p>Canonical regular-session bars and append-only research storage.</p></div><span class="status status-implemented">Implemented</span></li>
+          <li class="roadmap-complete"><span class="roadmap-marker"></span><div><small>SIMULATION</small><h3>Strategy 8887 and historical replay</h3><p>Deterministic engine, backtest harness, metrics, and reproducibility provenance.</p></div><span class="status status-implemented">Implemented</span></li>
+          <li class="roadmap-complete"><span class="roadmap-marker"></span><div><small>RESEARCH DATA</small><h3>Candidate-level pipeline</h3><p>Raw candidate capture, isolated outcomes, master dataset, and frozen target policy.</p></div><span class="status status-implemented">Implemented</span></li>
+          <li class="roadmap-complete"><span class="roadmap-marker"></span><div><small>VALIDATION</small><h3>Feature and evaluation contracts</h3><p>11-field causal representation plus chronological purging and embargo.</p></div><span class="status status-implemented">Implemented</span></li>
+          <li class="roadmap-current"><span class="roadmap-marker"></span><div><small>BASELINE MODEL</small><h3>Logistic Regression</h3><p>Scaling protocol is reserved; no fitted or evaluated model artifact is present.</p></div><span class="status status-planned">Planned</span></li>
+          <li><span class="roadmap-marker"></span><div><small>NONLINEAR MODEL</small><h3>XGBoost TAKE / SKIP model</h3><p>Planned only after the baseline and validation gates are satisfied.</p></div><span class="status status-planned">Planned</span></li>
+          <li><span class="roadmap-marker"></span><div><small>OPERATIONS</small><h3>Calibration, shadow mode, and paper trading</h3><p>Future stages for measuring execution assumptions before any live use.</p></div><span class="status status-planned">Planned</span></li>
+          <li class="roadmap-locked"><span class="roadmap-marker"></span><div><small>EXECUTION</small><h3>Production brokerage safety</h3><p>Connection boundary remains locked. No live order workflow is represented here.</p></div><span class="status status-locked">Locked</span></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="about-section" aria-labelledby="about-title">
+      <div class="section-shell about-grid">
+        <p class="section-number">06 / BUILDER</p>
+        <div>
+          <h2 id="about-title">Built independently, end to end.</h2>
+          <p>Quanta is an independent engineering and quantitative-research project spanning data infrastructure, deterministic simulation, experiment tracking, immutable research contracts, validation design, and public technical communication.</p>
+        </div>
+        <p class="about-aside">The focus is the system: what exists, how the boundaries work, and what remains to be built. No users, investors, live returns, or production trading capability are claimed.</p>
+      </div>
+    </section>
+
+    <section class="section-shell evidence-register" aria-labelledby="evidence-title">
+      <div class="evidence-register-head">
+        <p class="section-number">EVIDENCE REGISTER</p>
+        <h2 id="evidence-title">Every number has a boundary.</h2>
+      </div>
+      <div class="evidence-register-grid">
+        <div><span class="mono">11 FEATURES</span><p>Counted from the frozen model feature-definition tuple, schema <code>quanta-v1-model-features-v1</code>.</p></div>
+        <div><span class="mono">40 MINUTES</span><p>Fixed embargo constant in validation protocol <code>quanta-v1-chronological-purged-40m-v1</code>.</p></div>
+        <div><span class="mono">579 / 145</span><p>Trade and session counts in the deterministic <code>Baseline_001</code> analysis for run 39.</p></div>
+        <div><span class="mono">5 RUNS</span><p>Success-only records in the existing sanitized share-mode experiment dashboard snapshot.</p></div>
+      </div>
+      <p class="evidence-register-note">Historical simulations are not live investment performance. The 3,485-candidate, 186-session, and 171-test historical figures were not included because this public build did not find a permitted checked-in artifact that verified them.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-mark" aria-hidden="true">Q<span>/</span></div>
+    <div>
+      <strong>QUANTA</strong>
+      <span>Independent Quantitative Trading Research Project</span>
+    </div>
+    <p>Static research showcase · no login · no brokerage connection · no live trading</p>
+  </footer>
+</body>
+</html>
